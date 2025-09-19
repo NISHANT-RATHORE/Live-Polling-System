@@ -17,7 +17,9 @@ const ChevronDownIcon = () => (
     </svg>
 );
 
-const socket = io('http://localhost:3001');
+const socket = io("https://live-polling-system-b6jb.onrender.com", {
+    transports: ["websocket"],
+});
 
 const TeacherView = () => {
     // State and helper functions are unchanged
